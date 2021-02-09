@@ -1,12 +1,10 @@
 import websocket, json, pprint, talib, numpy, ta
 import config
-from datetime import datetimf
 from binance.client import Client
 from binance.enums import *
 
 SOCKET = "wss://stream.binance.com:9443/ws/ethusdt@kline_1m"
 
-now = datetime.now()
 closes = []
 in_position = False
 
@@ -30,10 +28,7 @@ def on_close(ws):
 
 def on_message(ws, message):
     global closes
-    
-    current_time = now.strftime("%H:%M:%S")
-    print("Nouveau message à", current_time)
-
+    print("Nouveau message")
     json_message = json.loads(message)
     pprint.pprint(json_message)
 
