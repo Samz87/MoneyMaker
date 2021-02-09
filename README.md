@@ -20,6 +20,14 @@
 
 >Dupliquer le fichier config-template.py puis renommer le fichier dupliqué en config.py
 
+>Completer le fichier config.py :
+  API_KEY et API_SECRET - Le duo de clés API généré sur Binance
+  RSI_PERIOD - Nombre d'itérations avant de calculer un RSI (14)
+  RSI_OVERBOUGHT - RSI auxquel le bot considère que la crypto est surachetée (70)
+  RSI_OVERSOLD - RSI auquel le bot considère que la crypto est survendue (30)
+  TRADE_SYMBOL - Symbole de la crypto tradée
+  TRADE_QUANTITY - Nombre de crypto achetées/vendues
+
 >Exécuter la commande CTRL+SHIFT+ù puis dans le terminal taper <code>pip install -r requirements.txt</code>
   
 >Dans la console, taper <code>bot.py</code>
