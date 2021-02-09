@@ -20,7 +20,7 @@
 
 >Dupliquer le fichier config-template.py puis renommer le fichier dupliqué en config.py
 
->Completer le fichier config.py :
+>Completer le fichier config.py : <br />
   API_KEY et API_SECRET - Le duo de clés API généré sur Binance <br />
   RSI_PERIOD - Nombre d'itérations avant de calculer un RSI (14) <br />
   RSI_OVERBOUGHT - RSI auxquel le bot considère que la crypto est surachetée (70) <br />
